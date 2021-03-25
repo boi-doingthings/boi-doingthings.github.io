@@ -1236,35 +1236,36 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
+            <form name="goog" id="contactForm" method="post" action="" autocomplete="off">
+				<fieldset>
 
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
+				<div class="form-field">
+						  <input name="Name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" >
+				</div>
+				<div class="form-field">
+					   <input name="Email" type="email" id="contactEmail" placeholder="Email" value="" required="">
+				 </div>
+				<div class="form-field">
+						  <input name="Phone" type="text" id="contactSubject" placeholder="Phone" value="">
+				 </div>                       
+				<div class="form-field">
+					   <textarea name="Message" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
+				 </div>                      
+			   <div class="form-field">
+				   <!-- <button class="submitform">Submit</button> -->
+				   <button type="submit" name="submit" value="Send message" class="submitform">Submit</button>
+				   <div id="submit-loader">
+					  <div class="text-loader">Sending...</div>                             
+						   <div class="s-loader">
+									<div class="bounce1"></div>
+									<div class="bounce2"></div>
+									<div class="bounce3"></div>
+							  </div>
+						  </div>
+				</div>
 
-      			</fieldset>
-      		</form> <!-- Form End -->
+				</fieldset>
+			</form> <!-- Form End -->
 
             <!-- contact-warning -->
             <div id="message-warning">            	
@@ -1372,6 +1373,18 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+
+   <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbz8PJFXS6aaMCITUK99ueYLsiVNaw9-vvKvTDIudBPD_1oOuFSAWZc-09MYa0s__NLwjw/exec'
+	const form = document.forms['goog']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
 
 </body>
 
