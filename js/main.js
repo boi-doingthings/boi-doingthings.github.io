@@ -289,3 +289,11 @@
 	});		
 
 })(jQuery);
+
+var typed = new Typed(".typing", {
+	strings: ["Data Scientist", "Business Analytics", 
+			  "DIY Hobbyist", "Economic Novice", "Quick Learner"],
+	typeSpeed: 70,
+	backSpeed: 30,
+	loop: true
+});
