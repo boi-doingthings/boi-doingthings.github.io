@@ -292,9 +292,13 @@
 
 var typed = new Typed(".typing", {
 	strings: ["Data Scientist", "Business Analytics", 
-			  "DIY Hobbyist", "Economic Novice", "Quick Learner"],
-	typeSpeed: 70,
-	backSpeed: 30,
+			  "DIY Hobbyist", "Economic Novice"],
+	typeSpeed: 40,
+	backSpeed: 20,
 	loop: true,
-	showCursor:false
+	showCursor: false,
+	startDelay: 1000,
+	smartBackspace:true,
+	startDelay:200,
+	backDelay:900
 });
