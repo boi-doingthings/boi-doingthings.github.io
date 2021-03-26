@@ -1,2 +1,2 @@
 # yashlab.github.io
-Try free Github hosting
+The repo for my personal website. 
