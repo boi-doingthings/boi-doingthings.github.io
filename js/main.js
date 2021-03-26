@@ -296,5 +296,5 @@ var typed = new Typed(".typing", {
 	typeSpeed: 70,
 	backSpeed: 30,
 	loop: true,
-	showCursor=false
+	showCursor:false
 });
