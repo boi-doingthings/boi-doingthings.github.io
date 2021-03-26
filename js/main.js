@@ -295,5 +295,6 @@ var typed = new Typed(".typing", {
 			  "DIY Hobbyist", "Economic Novice", "Quick Learner"],
 	typeSpeed: 70,
 	backSpeed: 30,
-	loop: true
+	loop: true,
+	showCursor=false
 });

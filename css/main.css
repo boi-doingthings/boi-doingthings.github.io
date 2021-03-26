@@ -1359,7 +1359,7 @@ header .logo a {
 	display: inline-block;
 }
 .intro-content .intro-position span::after {
-	content: "|";
+	/* content: "|"; */
 	text-align: center;
 	display: inline-block;
 	padding: 0 8px 0 14px;
@@ -1370,7 +1370,9 @@ header .logo a {
 	text-align: center;
 	display: inline-block;
 	padding: 0 14px 0 8px;
-	color: rgba(255, 255, 255, 0.3);
+	color: #cc005f;
+	font-size: 2rem;
+	font-weight: bold;
 }
 .intro-content .button {
 	color: #FFFFFF !important;
