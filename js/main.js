@@ -297,7 +297,7 @@ var typed = new Typed(".typing", {
 	backSpeed: 20,
 	loop: true,
 	showCursor: false,
-	startDelay: 1000,
+	// startDelay: 1000,
 	smartBackspace:true,
 	startDelay:200,
 	backDelay:900
