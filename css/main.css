@@ -1503,22 +1503,23 @@ header .logo a {
 }
 
 .intro-info {
-	margin-top: 4.2rem;
+	margin-top: 2.0rem;
 	margin-right: -30px;
 	margin-left: -40px;
 }
 .intro-info img {
-	/* height: 12rem; */
-	/* width: 12rem; */
-	height: 175px;
-	width: 150px;
+	height: 11em;
+	width: 11em;
 	border-radius: 50%;
-	margin: -4rem 3rem 0 0;
+	margin: -2rem 2rem 1rem -2rem;;
 	float: left;
 }
 .intro-info .lead {
 	text-align: left;
 	padding-left: 13rem;
+	font-size: 16px;
+	padding-top: 1em;
+	line-height: 1.5em;
 }
 
 .about-content {
