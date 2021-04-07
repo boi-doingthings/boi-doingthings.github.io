@@ -1096,17 +1096,17 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 175px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 50px;
 	top: 0;
 }
 header .logo {
 	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
+	margin-left: 5px;
+    margin-right: 50px;
+    margin-top: 20px;
 	position: relative;
 }
 header .logo a {
@@ -1114,13 +1114,15 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-align: justify;
+	text-shadow:rgba(255, 255, 255, 0.5);
+	color: white;
 	width: 92px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	
+	/* background-size: 92px 15px; */
 }
 
 /**
@@ -1494,7 +1496,7 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 1rem;
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -1625,8 +1627,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 1rem;
 }
 
 #resume .resume-header {
@@ -1795,8 +1797,8 @@ header .logo a {
  */
 #portfolio {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 1rem;
 }
 #portfolio .folio-item {
 	padding: 0;
