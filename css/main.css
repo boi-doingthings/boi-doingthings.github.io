@@ -1125,6 +1125,34 @@ header .logo a {
 	/* background-size: 92px 15px; */
 }
 
+header .blog {
+	float: right;
+	min-width: 120px;
+	min-height: 66px;
+	background-color: black;
+	position: relative;
+	/* text-decoration: underline wavy; */
+    padding: 20px;	
+    border-radius: 0px 0px 5px 5px;
+	text-align: center;
+}
+header .blog a {
+	display: block;
+	margin: auto;
+	padding: auto;
+	border: none;
+	font-size: 1.2em;
+	font-weight:bold;
+	text-align: justify;
+	text-shadow:rgba(255, 255, 255, 0.5);
+	color: white;
+	/* width: 92px; */
+	/* height: 15px; */
+	text-align: center
+	
+	/* background-size: 92px 15px; */
+}
+
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
