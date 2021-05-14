@@ -47,8 +47,8 @@
 	   		<div class="logo">
 		         <a href="index.html" style="color: white;">M E N U</a>
 				 
-		      </div>		      
-
+		      </div>
+			
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
@@ -62,18 +62,23 @@
 					</ul>
 				</nav>    		
    		</div> <!-- /top-bar --> 
-   		
+   		<!-- <div class="top-bar" style="position: relative;"> -->
+			 
+		   <!-- </div> -->
+		
    	</div> <!-- /row --> 		
    </header> <!-- /header -->
 
 	<!-- intro section
    ================================================== -->
-   <section id="intro">   
+   <section id="intro">   	
 
-   	<div class="intro-overlay"></div>	
-
+   	<div class="intro-overlay">
+	</div>	
+	
    	<div class="intro-content">
-   		<div class="row">
+		<div class="row">
+			 
 
    			<div class="col-twelve">
 
@@ -82,13 +87,18 @@
 
 	   			<p class="intro-position">
 					<strong><span class="typing"></span></strong>
-	   				<!-- <span>Data Science</span> -->
-	   				<!-- <span>Business Analytics</span>  -->
-					   <span style="color: #cc005f;font-size: 2rem;font-weight: bold;">|</span>
+	   				   <span style="color: #cc005f;font-size: 2rem;font-weight: bold;">|</span>
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
+				
+				<div class="blog">
+					<p>
+						<a href="https://blog.yashlab.pro/" style="color: white;"> BLOG</a>
+						&emsp;<a>|</a>&emsp;
+						<a href="" style="color: white;"> Collections</a>
+					</p>
+				
 	   		</div>  
    			
    		</div>   		 		
@@ -781,11 +791,6 @@
 		
 	</section> <!-- /portfolio --> 
 
-
-	<!-- CTA Section
-   ================================================== -->
-	
-
 	
 	<!-- services Section
    ================================================== -->
@@ -920,14 +925,13 @@
 
 		<!-- PROFESSIONAL ROW  -->
 		<div class ="row">
-			<div class="col-ten">
+			<div class="techs section-intro">
+				<h4 style="font-size: 18px;color:#151515;text-align: center; margin: 0%;"> PROFESSIONAL </h4>
+			</div>
+			<div class="col-eleven" style="align-items: center;">				
+				
 				<div class="block-1-8 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-
-					<div class="bgrid stat">
-						<h4 style="font-size: 18px;color:#151515;padding-top:25px;"> PROFESSIONAL </h4>
-					</div>
 					
-
 					<div class="bgrid stat">
 						<div class="icon-part">
 							<!-- <i class="icon-pencil-ruler"></i> -->
@@ -979,16 +983,14 @@
 
 					</div>
 
-
 					<div class="bgrid stat">
 						<div class="icon-part">
-							<!-- <i class="icon-pencil-ruler"></i> -->
-							<!-- <i style="size: 32px;"> -->
-								<img src="images/projects/tech/RStudio_logo_flat.svg" style="width:128px;height: 64px;"> 
-								<!-- </i> -->
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/320px-RStudio_logo_flat.svg.png" style="height: 64px;"> 
+								
 						</div>
-						<h5 class="techs-title" style="padding-top: 15px;">
-							R Programming
+
+						<h5 class="techs-title">
+							R
 						</h5>
 
 					</div>
@@ -997,21 +999,31 @@
 						<div class="icon-part">
 							<!-- <i class="icon-pencil-ruler"></i> -->
 							<!-- <i style="size: 32px;"> -->
-								<img src="images/projects/tech/tableau-software.svg" style="width:64px;height: 64px;"> 
+								<img src="https://xgboost.ai/images/logo/xgboost-logo.png" style="width:128px;height: 64px;"> 
 								<!-- </i> -->
 						</div>
 						<h5 class="techs-title">
-							Tableau
+							XGBoost
 						</h5>
 					</div>
 
 					<div class="bgrid stat">
 						<div class="icon-part">
 								<!-- <i class="icon-pencil-ruler"></i> -->
-								<img src="images/projects/tech/oracle-seeklogo.com.svg" style="width: 64px;;height:64px;">
+								<img src="https://www.h2o.ai/wp-content/themes/h2o2018/templates/dist/images/h2o_logo.svg" style="width: 64px;;height:64px;">
 						</div>
 						<h5 class="techs-title">
-							Oracle DB
+							H2O
+						</h5>
+					</div>
+
+					<div class="bgrid stat">
+						<div class="icon-part">
+								<!-- <i class="icon-pencil-ruler"></i> -->
+								<img src="images/projects/tech/tableau-software.svg" style="width: 64px;height:64px;">
+						</div>
+						<h5 class="techs-title">
+							Tableau
 						</h5>
 					</div>
 
@@ -1020,18 +1032,18 @@
 
 		</div>
 
-
-		<div class="row">
-			
+		<div class="row">			
 		</div>
-
+		
 		<div class ="row">
-			<div class="col-ten">
+			<div class="techs section-intro">
+				<h4 style="font-size: 18px;color:#151515;text-align: center;"> DIY-PROJECTS </h4>
+			</div>
+			
+			<div class="col-eleven" style="align-items: center;">
 				<div class="block-1-8 block-s-1-3 block-tab-1-2 block-mob-full ">
-					<div class="bgrid stat">
-						<h4 style="font-size: 18px;color:#151515;padding-top:25px;align-content: center;"> HOBBY </h4>
-					</div>
 					
+
 					<div class="bgrid stat">
 						<div class="icon-part">
 							<!-- <i class="icon-pencil-ruler"></i> -->
@@ -1058,7 +1070,6 @@
 						</h5>
 
 					</div>				
-
 					
 					<div class="bgrid stat">
 						<div class="icon-part">
@@ -1072,7 +1083,6 @@
 						</h5>
 
 					</div>
-
 
 					<div class="bgrid stat">
 						<div class="icon-part">
@@ -1122,27 +1132,22 @@
 
 					</div>
 					
-					
-
 				</div>
-				
-
-			</div>
-			
+			</div>			
 
 		</div>
 
-		<div class="row">
-			
+		<div class="row">			
 		</div>
 
 		<div class ="row">
+			<div class="techs section-intro">
+				<h4 style="font-size: 18px;color:#151515;text-align: center;"> Learning NOW </h4>
+			</div>
+
 			<div class="col-ten">
 				<div class="block-1-8 block-s-1-3 block-tab-1-2 block-mob-full ">
-					<div class="bgrid stat">
-						<h4 style="font-size: 18px;color:#151515;padding-top:25px;align-content: center;"> Learning NOW </h4>
-					</div>
-					
+										
 					<div class="bgrid stat">
 						<div class="icon-part">
 							<!-- <i class="icon-pencil-ruler"></i> -->
@@ -1208,21 +1213,13 @@
 						</h5>
 
 					</div>
-
-					
-					
-
 				</div>
-				
-
 			</div>
 			
 
 		</div>
 
 	</section>
-
-
 
 	<section id ='Awards'>
 		<style>
@@ -1332,7 +1329,7 @@
 				<div class="responsive">
 					<div class="gallery">
 						<img src="images/awards/chan1.jpg" alt="Cinque Terre" width="600" height="400">
-						<div class="desc">Served as Placement Committee Representative @ <a href="https://nitkkr.ac.in/docs/Placement_team_15.07.2020%2028082020.pdf"> TPO NIT-Kurukshetra </a></div>
+						<div class="desc">Placement Representative @ <a href="https://nitkkr.ac.in/docs/Placement_team_15.07.2020%2028082020.pdf"> TPO NIT-Kurukshetra </a></div>
 					</div>
 				</div>
 				<!-- <div class="clearfix"></div>	 -->
@@ -1349,7 +1346,7 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Contact</h5>
+   			<h5 style="margin-top: 20px;">Contact</h5>
    			<h1>I'd Love To Hear From You.</h1>
 
    			<p class="lead">I thank you for visiting. If you have any queries,concerns and suggestions. Please feel free to write to me.</p>
@@ -1438,10 +1435,14 @@
 
    			<h5>Email Me At</h5>
 
-   			<p><a href="mailto:ygupta32@gmail.com">ygupta32@gmail.com</a>
-			   	<!-- info@kardswebsite.com			      -->
-			   </p>
+   			<p style="margin: 0%;">
+				<a  href="mailto:ygupta32@gmail.com">ygupta32@gmail.com</a>				
+			</p>
+			<p>
+				<a href="mailto:chief@yashlab.pro">chief@yashlab.pro</a>
+			</p>
 
+			   <iframe src="https://polymathlab.substack.com/embed" width="300" height="300" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
    		</div>
 
    		<div class="col-four tab-full">

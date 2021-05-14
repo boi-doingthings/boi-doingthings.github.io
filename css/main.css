@@ -391,26 +391,26 @@ img.pull-left {
  * -------------------------------------------------------------------
  */
 .bgrid {
-	padding: 0 20px;
+	padding: 10px 5px;
 }
 @media only screen and (max-width:1024px) {
 	.bgrid {
-		padding: 0 18px;
+		padding: 5px 18px;
 	}
 }
 @media only screen and (max-width:768px) {
 	.bgrid {
-		padding: 0 15px;
+		padding: 5px 15px;
 	}
 }
 @media only screen and (max-width:600px) {
 	.bgrid {
-		padding: 0 10px;
+		padding: 5px 10px;
 	}
 }
 @media only screen and (max-width:400px) {
 	.bgrid {
-		padding: 0;
+		padding: 5px;
 	}
 }
 
@@ -1121,6 +1121,33 @@ header .logo a {
 	color: white;
 	width: 92px;
 	height: 15px;
+	
+	/* background-size: 92px 15px; */
+}
+
+.blog {
+	/* float: right; */
+	min-width: 120px;
+	min-height: 66px;	
+	position: relative;
+	/* text-decoration: underline wavy; */
+    padding: 10px;	
+    border-radius: 0px 0px 5px 5px;
+	text-align: center;
+}
+.blog a {
+	/* display: block; */
+	margin: auto;
+	padding: auto;
+	border: none;
+	font-size: 0.9em;
+	font-weight:bold;
+	text-align: justify;
+	text-shadow:rgba(255, 255, 255, 0.5);
+	color: white;
+	/* width: 92px; */
+	/* height: 15px; */
+	text-align: center
 	
 	/* background-size: 92px 15px; */
 }
@@ -2269,6 +2296,7 @@ header .logo a {
 #techs .stat {
 	border-left: 0px solid rgba(255, 255, 255, 0.3);
 	min-height: 5.0rem;
+	position: relative;
 }
 #techs .stat:first-child {
 	border: none;
@@ -2278,10 +2306,13 @@ header .logo a {
 	color: #FFFFFF;
 }
 #techs .techs-title {
-	color: #151515;
-	margin-top: 1.2rem;
+	color: #FFFDD0;
+	margin-top: 1rem;
 	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+	/* "poppins-medium", sans-serif; */
+	font-weight: 500;	
+
 }
 #techs .tech-icon{
 	size: 16px;
