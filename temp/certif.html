@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Awards | Yash</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+ 
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 30px;
+      background: whitesmoke;
+    }
+    
+    div.gallery:hover {
+      border: 1px dashed black;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid black;
+    }
+
+        
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 2px 6px;
+      float: left;
+      width: 33.33333%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+        
+      }
+      div.gallery {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+      }
+
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+      
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: #FF0077;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 20%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    </style>
+    
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#resume">Resume</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#portfolio">Projects</a></li>
+          <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="./techstack.html">Tech Stack</a></li>
+            <li><a href="./awards.html">Awards</a></li>
+            <li><a href="certif.html">Certificates</a></li>
+
+            <li class="dropdown"><a href="#"><span>Collections</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Music Playlists</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Articles</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Awards & Honors</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">DropDown</a></li>
+            <li>Awards</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+    
+    <div style="background: linen;">
+      <p class= "section-intro">
+        Marketing Analytics
+      </p>
+      <div class="container">
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60acd8747b0416a7a4917784_Webp.net-resizeimage.jpg" >
+          </div>        
+        </div>
+      
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f21774a82972c78b2d_Machine%20Learning%20for%20Marketing%20in%20Python-1.jpg" style="width:100%">
+          </div>
+        </div>
+      
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f2a8b5244565bcc146_predict_churn-1.jpg" style="width:100%">
+          </div>        
+        </div>
+          
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10eb71514269946a945d_certi_analytics_AB-1.jpg" style="width:100%">
+          </div>                
+        </div>
+      
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10ef1774a85fbcc78b2c_certificate_seg-1.jpg" style="width:100%">
+          </div>        
+        </div>
+                
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60acd8747b0416a7a4917784_Webp.net-resizeimage.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f21774a82972c78b2d_Machine%20Learning%20for%20Marketing%20in%20Python-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f2a8b5244565bcc146_predict_churn-1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10eb71514269946a945d_certi_analytics_AB-1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10ef1774a85fbcc78b2c_certificate_seg-1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>            
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background:linen;margin-top:100px">
+      <div class="container">
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f38182f1939f3f3cee_TimeSeriesAnalysis.-1.jpg" >
+          </div>        
+        </div>
+      
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f2fdc69c275157f904_GARCH_Models-1.jpg" style="width:100%">
+          </div>
+        </div>
+      
+        <div class="mySlides">
+          <div class="gallery">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1dd3d2fee8f00b8b9_GLM-1.jpg" style="width:100%">
+          </div>        
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f38182f1939f3f3cee_TimeSeriesAnalysis.-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f2fdc69c275157f904_GARCH_Models-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1dd3d2fee8f00b8b9_GLM-1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <div style="background:linen;">     
+    
+      
+
+      
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1dd3d2fee8f00b8b9_GLM-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1dd3d2fee8f00b8b9_GLM-1.jpg" alt="Northern Lights" width="600" height="400">          
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10ef4388df96c4b5826e_Coursera%204D36EM4S6X7Z-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10ef4388df96c4b5826e_Coursera%204D36EM4S6X7Z-1.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f000fa3c01443b212f_Coursera%20FFL96E3H4DFE-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f000fa3c01443b212f_Coursera%20FFL96E3H4DFE-1.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1a8b52468bdbcc11d_Coursera%20RQF5TTP77Q7H-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1a8b52468bdbcc11d_Coursera%20RQF5TTP77Q7H-1.jpg" alt="Cinque Terre" width="600" height="400">
+            
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1cef2a37812a436d3_Coursera%20Q3A8YC8U2V33-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f1cef2a37812a436d3_Coursera%20Q3A8YC8U2V33-1.jpg" alt="Cinque Terre" width="600" height="400">          
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f0a2c9a10e84e577cf_Coursera%20NBGEUXATZLKP-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f0a2c9a10e84e577cf_Coursera%20NBGEUXATZLKP-1.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f000fa3c01443b212f_Coursera%20FFL96E3H4DFE-1.jpg">
+            <img src="https://uploads-ssl.webflow.com/609ecec14782197474bd15fc/60ac10f000fa3c01443b212f_Coursera%20FFL96E3H4DFE-1.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <!-- <div class="desc">Add a description of the image here</div> -->
+        </div>
+      </div>
+
+      
+      <div class="clearfix"></div>
+    </div>   
+    
+  </main>
+
+    <footer id="footer">
+      <div class="container">
+        <h3>Yash Gupta</h3>
+        <p>Thanks for checking out my profile!</p>
+        <div class="social-links">
+          <a href="https://twitter.com/LabYash" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/yash29gupta/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/boi_doingthings/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/nitkgupta/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Yash Gupta</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+  
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+   
+  
+
+</body>
+</html>
+
+
+
+<section id ='Awards'>
+    <!-- <style>
+      div.gallery {
+        border: 0.5px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 1em;
+        
+      }
+      
+      div.gallery:hover {
+        border: 1px dashed white;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: 350px;
+        
+      } 
+      
+      div.desc {
+        padding: 3px;
+        text-align: center;
+        font-family: "poppins-semibold", serif;
+        font-size: small;			  
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 33%;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+        width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      
+    </style> -->
+      
+      <!-- <h2 style="color: #FF0077;
+      font-size: 1.6rem;
+      line-height: 1.875;
+      margin-bottom: 0.8rem;
+      padding-top: 15px;
+      letter-spacing: .4rem;
+      align-content: center;
+      text-align: center;">AWARDS & HONOURS</h2> -->
+      <!-- <h4>Resize the browser window to see the effect.</h4> -->
+      <!-- <div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="assets/img/awards/kab1.jpg" alt="Committee Head" width="600" height="400">
+            <div class="desc">Committee Head for <a href="https://www.instagram.com/confluence.nitkkr/?hl=en"> Confluence </a></div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <img src="assets/img/awards/conv1.jpg" alt="Convocation" width="600" height="400">
+            <div class="desc"> Graduation  <a href="https://nitkkr.ac.in/index.php"> NIT-Kurukshetra </a> </div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            
+          </div>
+        </div>
+        
+      </div>	 -->
+      
+  </section>
+
+  
