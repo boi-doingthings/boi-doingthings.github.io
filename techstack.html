@@ -40,7 +40,7 @@
     
     .parent {
         --l: calc(100vw/var(--n-cols));
-        --hl: calc(.4*var(--l));
+        --hl: calc(.2*var(--l));
         --ri: calc(.5*1.73205*var(--l));
         box-sizing: border-box;
         display: grid;
@@ -50,8 +50,8 @@
         overflow: hidden;
         margin: 0;
         padding: var(--hl) 0;
-        height: 80vh;
-        background-color: #222;
+        height: 60vh;
+        background-color: rgb(255, 255, 255);
         
     /*filter: drop-shadow(2px 2px 5px);*/
       }
@@ -72,12 +72,11 @@
       
       img {
         --hl: 0;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         object-fit:contain;
         transform: scale(calc(1 + .2*var(--hl)));
-        filter: brightness(calc(.6*(1 + var(--hl))));
-        transition: .7s;
+        transition: .2s;
         background: white;
         
       }
@@ -91,7 +90,7 @@
           color: White;
           text-transform: uppercase;
           text-align: center;
-          padding-top: 50px;
+          padding-top: 10px;
           font-weight: 600;
           border-bottom: 2px solid #990047;
       }
@@ -111,6 +110,7 @@
           <li><a class="nav-link scrollto" href="index.html#resume">Resume</a></li>
           <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
           <li><a class="nav-link scrollto" href="index.html#portfolio">Projects</a></li>
+          <li><a class="nav-link scrollto " href="http://blog.yashlab.pro/">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="techstack.html">Tech Stack</a></li>
@@ -145,7 +145,9 @@
         <div class="container">
   
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Tech Stack</h2>
+            <h2><b>
+              Tech Stack
+            </b></h2>
             <ol>
               <li><a href="index.html">Home</a></li>
               <li><a href="index.html">Menu</a></li>
@@ -163,17 +165,36 @@
             <div style="--n-rows: 3; --n-cols: 6" class="parent" >
             
                 <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
-                <div class="hex-cell"><img src="https://freepngimg.com/thumb/python_logo/5-2-python-logo-png-image-thumb.png"/></div>
+                <div class="hex-cell"><img src="https://pluralsight2.imgix.net/paths/images/python-7be70baaac.png"/></div>
                 <div class="hex-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"/></div>
                 <div class="hex-cell"><img src="https://www.logo.wine/a/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.svg"/></div>
-                <div class="hex-cell"><img src="https://d33wubrfki0l68.cloudfront.net/62bcc8535a06077094ca3c29c383e37ad7334311/a263f/assets/img/logo.svg"/></div>
-                <div class="hex-cell"><img src="https://banner2.cleanpng.com/20180704/hsu/kisspng-amazon-com-amazon-redshift-amazon-web-services-ama-amazon-redshift-5b3d01b85bd471.2223923815307247923762.jpg"/></div>
+                <div class="hex-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"/></div>
                 <div class="hex-cell"><img src="https://www.tableau.com/sites/default/files/pages/tableau_cmyk_2015.png"/></div>
                 <div class="hex-cell"><img src="https://xgboost.ai/images/logo/xgboost-logo.png"/></div>
+                <div class="hex-cell"><img src="https://www.tensorflow.org/images/tf_logo_social.png"/></div>
+                
                 
             </div>
         </div>
         
+        <div  class="stack-desc">
+          <p>
+              Learning
+          </p>
+
+          <div style="--n-rows: 3; --n-cols: 6" class="parent" >
+              <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
+              
+              <div class="hex-cell"><img src="https://rapids.ai/assets/images/RAPIDS-logo-purple.png"/></div>
+              <div class="hex-cell"><img src="https://static.djangoproject.com/img/logos/django-logo-positive.png"/></div>
+              <div class="hex-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" style="height: 80%; width: 50%"></div>
+              <div class="hex-cell"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFzIxlpQ0lAdA/company-logo_200_200/0/1610402246531?e=2159024400&v=beta&t=Jl9zauyoNOzELR2ii6xNBIxqAfgYkV7SD97bULUHJHE"/></div>
+              <div class="hex-cell"><img src="https://www.serviops.ca/wp-content/uploads/2015/07/Google-Cloud-Platform-GCP-Logo.png"/></div>
+              
+          </div>
+
+      </div>
+
         <div  class="stack-desc">
             <p>
                 DIY Projects
@@ -188,24 +209,6 @@
                 <div class="hex-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg"/></div>
                 <div class="hex-cell"><img src="https://www.unipi.technology/assets/content/1140x640/y70e9tix7a_._sablona-web-titulniObrazek.png"/></div>
                 <div class="hex-cell"><img src="https://myvmworld.fr/wp-content/uploads/2017/12/grafana.png"/></div>
-                
-            </div>
-
-        </div>
-
-        <div  class="stack-desc">
-            <p>
-                In-Development
-            </p>
-
-            <div style="--n-rows: 3; --n-cols: 6" class="parent" >
-                <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
-                <div class="hex-cell"><img src="https://www.tensorflow.org/images/tf_logo_social.png"/></div>
-                <div class="hex-cell"><img src="https://rapids.ai/assets/images/RAPIDS-logo-purple.png"/></div>
-                <div class="hex-cell"><img src="https://static.djangoproject.com/img/logos/django-logo-positive.png"/></div>
-                <div class="hex-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"/></div>
-                <div class="hex-cell"><img src="https://www.h2o.ai/wp-content/themes/h2o2018/templates/dist/images/h2o_logo.svg"/></div>
-                
                 
             </div>
 
