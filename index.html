@@ -82,8 +82,24 @@
   <section id="hero">
     <div class="hero-container">
       <h3>HELLO, WORLD!</h3>
-      <h1>Yash Gupta</h1>
-      <h2><strong><span class="typing"></span></strong></h2>
+      <h1 style="
+                 background-image: linear-gradient(to right, #240b36, #c31432);
+                 background-image: linear-gradient(to right, #f12711, #f5af19);
+                 background-clip: text;
+                -webkit-background-clip: text;
+                 color: transparent;
+                 background-size: cover;
+      ">Yash Gupta</h1>
+      
+      <h2 style = "background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: cover;
+        /* background-image: url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjF9'); */
+        background-image: linear-gradient(90deg,#ffc170,#ec787f,#8980ed);
+        font-size: 1.35rem;">
+        <strong><span class="typing"></span></strong>
+      </h2>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -110,15 +126,15 @@
                 <div class="col-lg-6" style="margin-top: 10px;">
                   <ul>
                     <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Yash Gupta</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.yashlab.pro</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 74046 58930</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.yashsay.me</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 80779 50610</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Gurugram, HR</span></li>
                   </ul>
                 </div>
                 <div class="col-lg-6" style="margin-top: 10px;">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Current Job:</strong> <span>Data Science Analyst</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>chief@yashlab.pro</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Current Job:</strong> <span>Data Scientist</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>chief@yglabs.info</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Hometown:</strong> <span>Mathura, UP</span></li>
                   </ul>
@@ -225,12 +241,12 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Yash Gupta</h4>
-              <p><em>A logical thinker with 2+ years of experience in building end-to-end analytical solutions for business problems.</em></p>
+              <p><em>A logical thinker with ~3 years of experience in building end-to-end analytical solutions for business problems.</em></p>
               
               <p>
               <ul>
                 <li>Vasudhara Panchsheel, Mathura, UP</li>
-                <li>(+91) 74046 58930 </li>
+                <li>(+91) 80779 50610 </li>
                 <li>chief@yashlab.pro</li>
               </ul>
               </p>
@@ -282,20 +298,17 @@
               <h4>Engineering Intern</h4>
               <h5>May 2018 - July 2018</h5>
               <p><em>POWER SYSTEM OPERATION CORPORATION LIMITED, DL</em></p>
-              <p>Power System Modelling Lab </p>
+              <p> <b> Power System Modelling Lab </b> </p>
                 <p>
                   <ul style="line-height:125%;font-size: 15px;">
                   <li>Designed a High Voltage DC transmission line (TL) for a major zone. </li>
-                  <li>Undertook load flow studies based on the historical data for capacaity planning. </li>
-                  <li>Analysed transient response over different types of faults.</li> 
+                  <li>Undertook load flow and fault tolerance studies for capacity planning. </li>
+                  <!-- <li>Analysed transient response over different types of faults.</li>  -->
                   <li>Developed static and dynamic models of TL in different configurations via detailed mathematical analysis</li>
                   <li> <b> IMPACT: </b> The proposed TL was moved into consideration for higher authorities for actual implementation.</li>
                   </ul>
                 </p>
             </div>
-          </div>
-
-          <div class="col-lg-6">
 
             <div class="resume-item">
               <h4>Summer Research Intern</h4>
@@ -306,25 +319,43 @@
                 <li>Worked on a SOTA breast cancer diffused optical tomography setup.</li>
                 <li>Programmed a parallelized software version of a Lock-in Amplifier.</li>
                 <li>Implemented hardware parallelization to process signals on a 24-channel input. </li>
-                <li>One of the two undergrads in a laboratory of PhDs and post-docs.</li>
+                <!-- <li>One of the two undergrads in a laboratory of PhDs and post-docs.</li> -->
                 <li> <b> IMPACT: </b> The prototype reduced diagnosis test time by 4x.</li>
                 </ul>
               </p>
             </div>
 
+          </div>
+
+          <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             
             <div class="resume-item">
+              <h4>Data Scientist</h4>
+              <h5>Nov 2021- Present</h5>
+              <p><em>Shiprocket</em></p>
+              <strong> Data Science | Engineering </strong>
+              <p>
+              <ul style="line-height:125%;font-size: 15px;">
+               
+                <li>Developed robust in-house address intelligence system using NLP to decrease RTO cases.</li>
+                <li>Configured an end to end process for PMs to establish dark stores for hyperlocal fulfilment.</li>
+                <li>Built demand forecasting engines for sellers to reduce shipping time via Shiprocket Fulfilment.</li>
+                
+              </ul>
+              </p>
+            </div>
+            
+            <div class="resume-item">
               <h4>Analyst - Data Science</h4>
-              <h5>June 2021- Present</h5>
+              <h5>June 2021- Oct 2021</h5>
               <p><em>Whitehat Jr.</em></p>
               <strong> Renewals & Customer Analytics </strong>
               <p>
               <ul style="line-height:125%;font-size: 15px;">
                
                 <li>Developed propensity models capturing customer renewal behaviour and refunds -> 2x higher retention. </li>
-                <li>Created a unified ML-driven platform for sales managers -> enhanced customer interactions -> boosting KPIs. </li>
-                <li>Designed data pipelines to capture fictious transactions and maintain data sanity. </li>
+                <li>Created a unified ML-driven platform for sales managers -> enhanced customer interactions -> boosting KPIs. </li>                
                 <li>Defined a segmentation process for improved student-teacher mappings.</li>
                 <li>Deployed, monitor and validate new/existing KPI metrics using self designed automated dashboards.</li>
               </ul>
@@ -928,14 +959,14 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Me</h3>
-                  <p>chief@yashlab.pro</p>
+                  <p>chief@yglabs.info</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Me</h3>
-                  <p>+91 74046 58930</p>
+                  <p>+91 80779 50610</p>
                 </div>
               </div>
             </div>

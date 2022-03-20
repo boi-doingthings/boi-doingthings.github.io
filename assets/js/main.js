@@ -244,10 +244,11 @@
 
 var typed = new Typed(".typing", {
 	strings: [
-    "Data Scientist",
-    "Analyst",
-    "DIY Hobbyist",
-    "Economic Novice"
+    "DATA SCIENCE",
+    "PRODUCT",
+    "ANALYTICS",
+    "WEB-3",    
+    "BUSINESSES"
   ],
 	typeSpeed: 40,
 	backSpeed: 20,
