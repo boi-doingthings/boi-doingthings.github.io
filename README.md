@@ -1,2 +1,2 @@
-# yashlab.github.io
-The repo for my personal website. 
+# My Website
+Using this repo for maintaining my personal portfolio website.
