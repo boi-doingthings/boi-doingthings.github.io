@@ -244,11 +244,11 @@
 
 var typed = new Typed(".typing", {
 	strings: [
-    "DATA SCIENCE",
-    "PRODUCT",
-    "ANALYTICS",
-    "WEB-3",    
-    "BUSINESSES"
+    "Data Science",
+    "Generative AI",
+    "Analytics",
+    "Solutions Architecture",    
+    "Business Problems"
   ],
 	typeSpeed: 40,
 	backSpeed: 20,
