@@ -247,8 +247,8 @@ var typed = new Typed(".typing", {
     "Data Science",
     "Generative AI",
     "Analytics",
-    "Solutions Architecture",    
-    "Business Problems"
+    "System Architecture",    
+    "Business Solutions"
   ],
 	typeSpeed: 40,
 	backSpeed: 20,
