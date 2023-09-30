@@ -3,27 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .profile-picture {
+            margin-right: 20px;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .details {
+            max-width: 400px;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .value {
+            color: #333;
+        }
+    </style>
     <title>Emergency Details</title>
 </head>
 <body>
-    <h1>Emergency Details</h1>
-    <form id="emergencyForm">
-        <!-- Add your form fields here -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="contact">Emergency Contact:</label>
-        <input type="text" id="contact" name="contact" required><br>
-
-        <!-- Add more fields as needed -->
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <div id="displayDetails">
-        <!-- Display submitted details here -->
+    <div class="container">
+        <div class="profile-picture">
+            <!-- You can add your picture here -->
+            <img src="emergency_picture.jpg" alt="My Picture">
+        </div>
+        <div class="details">
+            <h1>Emergency Details</h1>
+            <div class="detail-item">
+                <span class="label">Name:</span>
+                <span class="value" id="name">Yash Gupta</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Age:</span>
+                <span class="value" id="age">26</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Blood Group:</span>
+                <span class="value" id="bloodGroup">B+</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Allergies:</span>
+                <span class="value" id="allergies">None</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Health Policy Number:</span>
+                <span class="value" id="healthPolicyNumber">Niva Bupa Health Insurance: 33242567202300</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Emergency Contact:</span>
+                <span class="value" id="emergencyContactName">Pankaj Gupta (Father) </span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Emergency Contact Number:</span>
+                <span class="value">
+                    <a href="tel:+919719111573" class="phone-link" id="emergencyContactNumber">+91-9719111573</a>
+                </span>
+            </div>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
