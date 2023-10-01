@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .profile-section,
+        .contact-section {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
         }
 
         .profile-picture {
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .profile-picture img {
@@ -44,46 +56,86 @@
         .value {
             color: #333;
         }
+
+        .phone-link {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
     </style>
     <title>Emergency Details</title>
 </head>
 <body>
     <div class="container">
-        <div class="profile-picture">
-            <!-- You can add your picture here -->
-            <img src="emergency_picture.jpg" alt="My Picture">
+        <div class="profile-section">
+            <div class="profile-picture">
+                <!-- You can add your picture here -->
+                <img src="emergency_picture.jpg" alt="My Picture">
+            </div>
+            <div class="details">
+                <h2>Personal Details</h2>
+                <div class="details">
+                    <h1>Emergency Details</h1>
+                    <div class="detail-item">
+                        <span class="label">Name:</span>
+                        <span class="value" id="name">Yash Gupta</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Age:</span>
+                        <span class="value" id="age">26</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Blood Group:</span>
+                        <span class="value" id="bloodGroup">B+</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Allergies:</span>
+                        <span class="value" id="allergies">None</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Health Insurer:</span>
+                        <span class="value" id="healthPolicyNumber">Niva Bupa Health Insurance </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Health Policy Number:</span>
+                        <span class="value" id="healthPolicyNumber"> 33242567202300 </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Height:</span>
+                        <span class="value" id="height">5'6"</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Weight:</span>
+                        <span class="value" id="weight">70 Kg </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Hair Color:</span>
+                        <span class="value" id="hairColor">Black</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Eye Color:</span>
+                        <span class="value" id="eyeColor">Black</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="details">
-            <h1>Emergency Details</h1>
-            <div class="detail-item">
-                <span class="label">Name:</span>
-                <span class="value" id="name">Yash Gupta</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Age:</span>
-                <span class="value" id="age">26</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Blood Group:</span>
-                <span class="value" id="bloodGroup">B+</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Allergies:</span>
-                <span class="value" id="allergies">None</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Health Policy Number:</span>
-                <span class="value" id="healthPolicyNumber">Niva Bupa Health Insurance: 33242567202300</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Emergency Contact:</span>
-                <span class="value" id="emergencyContactName">Pankaj Gupta (Father) </span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Emergency Contact Number:</span>
-                <span class="value">
-                    <a href="tel:+919719111573" class="phone-link" id="emergencyContactNumber">+91-9719111573</a>
-                </span>
+        <div class="contact-section">
+            <div class="details">
+                <h2>Contact Details</h2>
+                <div class="detail-item">
+                    <span class="label">Emergency Contact:</span>
+                    <span class="value" id="emergencyContactName">Pankaj Gupta (Father) </span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Emergency Contact Number:</span>
+                    <span class="value">
+                        <a href="tel:+919719111573" class="phone-link" id="emergencyContactNumber">+919719111573</a>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
