@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @media only screen and (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .profile-section,
+        .contact-section {
+            margin: 10px 0;
+        }
+
+        .details {
+            max-width: none;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            max-width: 150px;
+        }
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -37,7 +58,7 @@
         .profile-picture img {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
+            border-radius: 40%;
         }
 
         .details {
