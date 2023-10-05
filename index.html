@@ -982,7 +982,7 @@
 
           <div class="col-lg-6">
             
-            <form name="goog" id="contactForm" method="post" action="" autocomplete="off">
+            <!-- <form name="goog" id="contactForm" method="post" action="" autocomplete="off">
               <div class="row">
                 <div class="col-md-6 form-group">                
                   <input name="Name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" class="form-control" >
@@ -1003,8 +1003,23 @@
               </div>
               
             </form>
-            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEUJG8xVpkjUw4lavRT61Sivjm03s-88FF_57qCczp-OrqSA/viewform?embedded=true" width="250" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-          </div> 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEUJG8xVpkjUw4lavRT61Sivjm03s-88FF_57qCczp-OrqSA/viewform?embedded=true" width="250" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>  -->
+
+          <form id="fs-frm" name="Message-form" accept-charset="utf-8" action="https://formspree.io/f/mjvqplgv" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" value="" minlength="2" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="telephone">Telephone Number (Optional)</label>
+              <input type="telephone" name="telephone" id="telephone" placeholder="+91-98765-43210">
+              <label for="Message">Message</label>
+              <textarea rows="6" name="Message" id="Message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Message Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+          </form>
           
         </div>
 
