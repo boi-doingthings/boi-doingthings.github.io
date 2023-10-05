@@ -90,6 +90,28 @@
     </style>
     <title>Emergency Details</title>
 </head>
+<script>
+    function openNearbyHospitals() {
+        // Get the current location using the HTML5 Geolocation API
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                // Create a Google Maps link with the current location
+                const mapsLink = `https://www.google.com/maps/search/hospitals/@${latitude},${longitude},15z`;
+
+                // Open the link in a new tab or window
+                window.open(mapsLink, '_blank');
+            }, function (error) {
+                console.error('Error getting location:', error.message);
+            });
+        } else {
+            console.error('Geolocation is not supported by this browser.');
+        }
+    }
+</script>
+
 <body>
     <div class="container">
         <div class="profile-section">
@@ -157,6 +179,13 @@
                         <a href="tel:+919719111573" class="phone-link" id="emergencyContactNumber">+919719111573</a>
                     </span>
                 </div>
+                <div class="detail-item">
+                    <span class="label">Nearby Hospitals:</span>
+                    <span class="value">
+                        <a href="#" id="nearbyHospitalsLink" onclick="openNearbyHospitals()">Find Nearby Hospitals</a>
+                    </span>
+                </div>
+                
             </div>
         </div>
     </div>
