@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media only screen and (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .profile-section,
+        .contact-section {
+            margin: 10px 0;
+        }
+
+        .details {
+            max-width: none;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            max-width: 150px;
+        }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .profile-section,
+        .contact-section {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .profile-picture {
+            margin-bottom: 20px;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 40%;
+        }
+
+        .details {
+            max-width: 400px;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .value {
+            color: #333;
+        }
+
+        .phone-link {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Emergency Details</title>
+</head>
+<script>
+    function openNearbyHospitals() {
+        // Get the current location using the HTML5 Geolocation API
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                // Create a Google Maps link with the current location
+                const mapsLink = `https://www.google.com/maps/search/hospitals/@${latitude},${longitude},15z`;
+
+                // Check if the user is on a mobile device
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+                if (isMobile) {
+                    // For mobile devices, navigate to the Google Maps link
+                    window.location.href = mapsLink;
+                } else {
+                    // For desktop, open the link in a new tab or window
+                    window.open(mapsLink, '_blank');
+                }
+            }, function (error) {
+                console.error('Error getting location:', error.message);
+            });
+        } else {
+            console.error('Geolocation is not supported by this browser.');
+        }
+    }
+</script>
+
+
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-picture">
+                <!-- You can add your picture here -->
+                <img src="emergency_picture.jpg" alt="My Picture">
+            </div>
+            <div class="details">
+                <h2>Personal Details</h2>
+                <div class="details">
+                    <h1>Emergency Details</h1>
+                    <div class="detail-item">
+                        <span class="label">Name:</span>
+                        <span class="value" id="name">Yash Gupta</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Age:</span>
+                        <span class="value" id="age">26</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Blood Group:</span>
+                        <span class="value" id="bloodGroup">B+</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Allergies:</span>
+                        <span class="value" id="allergies">None</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Health Insurer:</span>
+                        <span class="value" id="healthPolicyNumber">Niva Bupa Health Insurance </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Health Policy Number:</span>
+                        <span class="value" id="healthPolicyNumber"> 33242567202300 </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Height:</span>
+                        <span class="value" id="height">5'6"</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Weight:</span>
+                        <span class="value" id="weight">70 Kg </span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Hair Color:</span>
+                        <span class="value" id="hairColor">Black</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Eye Color:</span>
+                        <span class="value" id="eyeColor">Black</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="details">
+                <h2>Contact Details</h2>
+                <div class="detail-item">
+                    <span class="label">Emergency Contact:</span>
+                    <span class="value" id="emergencyContactName">Pankaj Gupta (Father) </span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Emergency Contact Number:</span>
+                    <span class="value">
+                        <a href="tel:+919719111573" class="phone-link" id="emergencyContactNumber">+919719111573</a>
+                    </span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="label">Recognised Hospitals:</span>
+                    <span class="value">
+                        <a href="https://rules.nivabupa.com/hospital-network/" id="nearbyHospitalsLink">List</a>
+                    </span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="label">Nearby Hospitals:</span>
+                    <span class="value">
+                        <a href="#" id="nearbyHospitalsLink" onclick="openNearbyHospitals()">Find Nearby Hospitals</a>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
