@@ -1,2 +1,2 @@
 # My Website
-Using this repo for maintaining my personal portfolio website.
+The repository is a single source  of information about me.
