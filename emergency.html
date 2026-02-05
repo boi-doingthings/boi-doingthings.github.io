@@ -1,210 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @media only screen and (max-width: 600px) {
-        .container {
-            flex-direction: column;
-        }
-
-        .profile-section,
-        .contact-section {
-            margin: 10px 0;
-        }
-
-        .details {
-            max-width: none;
-        }
-
-        .profile-picture img {
-            width: 100%;
-            max-width: 150px;
-        }
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .profile-section,
-        .contact-section {
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-        }
-
-        .profile-picture {
-            margin-bottom: 20px;
-        }
-
-        .profile-picture img {
-            width: 150px;
-            height: 150px;
-            border-radius: 40%;
-        }
-
-        .details {
-            max-width: 400px;
-        }
-
-        .detail-item {
-            margin-bottom: 15px;
-        }
-
-        .label {
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        .value {
-            color: #333;
-        }
-
-        .phone-link {
-            color: #007bff;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .phone-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <title>Emergency Details</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Contact - Yash Gupta</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif;background:#f5f5f5;color:#222;line-height:1.6;padding:16px}
+.emergency-banner{background:#d32f2f;color:#fff;padding:12px;text-align:center;font-size:20px;font-weight:700;margin-bottom:16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.container{max-width:800px;margin:0 auto}
+.profile-pic{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 16px;border:4px solid #d32f2f;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.card{background:#fff;border-radius:8px;padding:20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+h2{color:#d32f2f;font-size:20px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #d32f2f}
+.critical{background:#fff3cd;border-left:4px solid #ff9800;padding:12px;margin-bottom:16px;border-radius:4px}
+.critical-label{font-weight:700;color:#d32f2f;font-size:14px;text-transform:uppercase;margin-bottom:4px}
+.critical-value{font-size:24px;font-weight:700;color:#222}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.info-item{padding:8px 0;border-bottom:1px solid #eee}
+.info-item:last-child{border-bottom:none}
+.label{font-weight:600;color:#555;font-size:14px;display:block;margin-bottom:4px}
+.value{font-size:16px;color:#222;display:block}
+a{color:#1976d2;text-decoration:none;font-weight:600}
+a:hover{text-decoration:underline}
+.btn{display:inline-block;background:#1976d2;color:#fff;padding:12px 24px;border-radius:6px;text-align:center;font-weight:600;margin-top:8px;font-size:16px}
+.btn:hover{background:#1565c0;text-decoration:none}
+.btn-emergency{background:#d32f2f;font-size:18px;display:block;margin-bottom:12px}
+.btn-emergency:hover{background:#c62828}
+@media(max-width:600px){
+body{padding:8px}
+.emergency-banner{font-size:18px;padding:10px}
+.critical-value{font-size:20px}
+.info-grid{grid-template-columns:1fr}
+.profile-pic{width:100px;height:100px}
+}
+</style>
 </head>
-<script>
-    function openNearbyHospitals() {
-        // Get the current location using the HTML5 Geolocation API
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude;
-
-                // Create a Google Maps link with the current location
-                const mapsLink = `https://www.google.com/maps/search/hospitals/@${latitude},${longitude},15z`;
-
-                // Check if the user is on a mobile device
-                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-                if (isMobile) {
-                    // For mobile devices, navigate to the Google Maps link
-                    window.location.href = mapsLink;
-                } else {
-                    // For desktop, open the link in a new tab or window
-                    window.open(mapsLink, '_blank');
-                }
-            }, function (error) {
-                console.error('Error getting location:', error.message);
-            });
-        } else {
-            console.error('Geolocation is not supported by this browser.');
-        }
-    }
-</script>
-
-
 <body>
-    <div class="container">
-        <div class="profile-section">
-            <div class="profile-picture">
-                <!-- You can add your picture here -->
-                <img src="emergency_picture.jpg" alt="My Picture">
-            </div>
-            <div class="details">
-                <h2>Personal Details</h2>
-                <div class="details">
-                    <h1>Emergency Details</h1>
-                    <div class="detail-item">
-                        <span class="label">Name:</span>
-                        <span class="value" id="name">Yash Gupta</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Age:</span>
-                        <span class="value" id="age">26</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Blood Group:</span>
-                        <span class="value" id="bloodGroup">B+</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Allergies:</span>
-                        <span class="value" id="allergies">None</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Health Insurer:</span>
-                        <span class="value" id="healthPolicyNumber">Niva Bupa Health Insurance </span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Health Policy Number:</span>
-                        <span class="value" id="healthPolicyNumber"> 33242567202300 </span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Height:</span>
-                        <span class="value" id="height">5'6"</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Weight:</span>
-                        <span class="value" id="weight">70 Kg </span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Hair Color:</span>
-                        <span class="value" id="hairColor">Black</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Eye Color:</span>
-                        <span class="value" id="eyeColor">Black</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact-section">
-            <div class="details">
-                <h2>Contact Details</h2>
-                <div class="detail-item">
-                    <span class="label">Emergency Contact:</span>
-                    <span class="value" id="emergencyContactName">Pankaj Gupta (Father) </span>
-                </div>
-                <div class="detail-item">
-                    <span class="label">Emergency Contact Number:</span>
-                    <span class="value">
-                        <a href="tel:+919719111573" class="phone-link" id="emergencyContactNumber">+919719111573</a>
-                    </span>
-                </div>
-                
-                <div class="detail-item">
-                    <span class="label">Recognised Hospitals:</span>
-                    <span class="value">
-                        <a href="https://rules.nivabupa.com/hospital-network/" id="nearbyHospitalsLink">List</a>
-                    </span>
-                </div>
-                
-                <div class="detail-item">
-                    <span class="label">Nearby Hospitals:</span>
-                    <span class="value">
-                        <a href="#" id="nearbyHospitalsLink" onclick="openNearbyHospitals()">Find Nearby Hospitals</a>
-                    </span>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+<div class="emergency-banner">⚠️ EMERGENCY CONTACT INFORMATION ⚠️</div>
+<div class="container">
+<div class="card">
+<img src="emergency_picture.jpg" alt="Yash Gupta" class="profile-pic">
+<div class="critical">
+<div class="critical-label">Emergency Contact</div>
+<div class="critical-value">Pankaj Gupta (Father)</div>
+<a href="tel:+919719111573" class="btn btn-emergency">📞 Call: +91 97191 11573</a>
+</div>
+<div class="critical">
+<div class="critical-label">Blood Group</div>
+<div class="critical-value">B+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>👤 Personal Information</h2>
+<div class="info-grid">
+<div class="info-item">
+<span class="label">Name</span>
+<span class="value">Yash Gupta</span>
+</div>
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">26</span>
+</div>
+<div class="info-item">
+<span class="label">Height</span>
+<span class="value">5'6"</span>
+</div>
+<div class="info-item">
+<span class="label">Weight</span>
+<span class="value">70 Kg</span>
+</div>
+<div class="info-item">
+<span class="label">Hair Color</span>
+<span class="value">Black</span>
+</div>
+<div class="info-item">
+<span class="label">Eye Color</span>
+<span class="value">Black</span>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>🏥 Medical Information</h2>
+<div class="info-item">
+<span class="label">Allergies</span>
+<span class="value">None</span>
+</div>
+<div class="info-item">
+<span class="label">Health Insurer</span>
+<span class="value">Niva Bupa Health Insurance</span>
+</div>
+<div class="info-item">
+<span class="label">Policy Number</span>
+<span class="value">33242567202300</span>
+</div>
+<div class="info-item">
+<span class="label">Recognised Hospitals</span>
+<a href="https://rules.nivabupa.com/hospital-network/" target="_blank">View Network List →</a>
+</div>
+</div>
+
+<div class="card">
+<h2>📍 Quick Actions</h2>
+<a href="#" onclick="findHospitals();return false" class="btn" style="display:block;text-align:center">Find Nearby Hospitals</a>
+</div>
+</div>
+
+<script>
+function findHospitals(){
+if(!navigator.geolocation){
+alert('Geolocation not supported');
+return;
+}
+navigator.geolocation.getCurrentPosition(
+pos=>{
+const url=`https://www.google.com/maps/search/hospitals/@${pos.coords.latitude},${pos.coords.longitude},14z`;
+window.open(url,'_blank');
+},
+err=>alert('Unable to get location: '+err.message)
+);
+}
+</script>
 </body>
 </html>
