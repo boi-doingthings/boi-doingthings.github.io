@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency QR Code</title>
+<style>
+body{font-family:Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px;background:#f5f5f5}
+.container{background:#fff;padding:40px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.15);text-align:center;max-width:600px}
+h1{color:#d32f2f;margin-bottom:10px}
+.subtitle{color:#666;margin-bottom:30px}
+#qrcode{margin:20px auto;padding:20px;background:#fff;border:2px solid #ddd;border-radius:8px;display:inline-block}
+.instructions{margin-top:30px;text-align:left;background:#f9f9f9;padding:20px;border-radius:8px;border-left:4px solid #d32f2f}
+.instructions h3{margin-top:0;color:#d32f2f}
+.instructions li{margin:8px 0}
+.url{margin:20px 0;padding:12px;background:#f5f5f5;border-radius:6px;word-break:break-all;font-family:monospace;font-size:14px}
+button{background:#1976d2;color:#fff;border:none;padding:12px 24px;font-size:16px;border-radius:6px;cursor:pointer;margin:10px 5px}
+button:hover{background:#1565c0}
+.print-msg{display:none;margin-top:20px;padding:15px;background:#4caf50;color:#fff;border-radius:6px}
+@media print{
+body{background:#fff}
+.container{box-shadow:none}
+button{display:none}
+.print-msg{display:block}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>⚠️ Emergency Contact QR Code</h1>
+<div class="subtitle">Scan to access emergency information</div>
+<div class="url">https://archive.hsay.in/emergency.html</div>
+<div id="qrcode"></div>
+<div class="print-msg">✅ Print this page and place it on your bike helmet, car dashboard, or wallet</div>
+<button onclick="window.print()">🖨️ Print QR Code</button>
+<button onclick="downloadQR()">💾 Download PNG</button>
+<div class="instructions">
+<h3>📋 How to Use:</h3>
+<ol>
+<li><strong>Print</strong>: Click "Print QR Code" and print this page</li>
+<li><strong>Laminate</strong>: Get it laminated for weather resistance</li>
+<li><strong>Place</strong>: Attach to:
+<ul>
+<li>Inside of bike helmet</li>
+<li>Car dashboard or glove box</li>
+<li>Back of wallet or ID card</li>
+<li>Medical alert bracelet</li>
+</ul>
+</li>
+<li><strong>Label</strong>: Add text like "EMERGENCY INFO - SCAN ME"</li>
+</ol>
+<p><strong>💡 Tip:</strong> Test the QR code with your phone before printing to ensure it works properly.</p>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const url='https://archive.hsay.in/emergency.html';
+new QRCode(document.getElementById('qrcode'),{
+text:url,
+width:256,
+height:256,
+colorDark:'#000000',
+colorLight:'#ffffff',
+correctLevel:QRCode.CorrectLevel.H
+});
+
+function downloadQR(){
+const canvas=document.querySelector('#qrcode canvas');
+if(canvas){
+const link=document.createElement('a');
+link.download='emergency-qr-code.png';
+link.href=canvas.toDataURL();
+link.click();
+}
+}
+</script>
+</body>
+</html>
